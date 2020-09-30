@@ -1,0 +1,43 @@
+.contact{
+    background: rgb(26, 26, 26);
+    color: white;
+    width: 80%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    div{
+        width: 80%;
+        input, textarea{
+            width: 100%;
+            margin-bottom: 5px;
+            resize: none;
+            outline: none;
+            background: gray;
+            border: none;
+            transition: all .4s ease;
+            
+            &::placeholder{
+                color: rgb(255, 255, 255);
+            }
+            &:focus{
+                background: white;
+            }
+        }
+        textarea{
+            height: 80px;
+        }
+        button{
+            width: 50%;
+            height: 35px;
+            background: rgb(174, 0, 255);
+            margin-left: 50%;
+            color: rgb(34, 34, 34);
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+}

@@ -1,0 +1,186 @@
+.contact {
+  background: #1a1a1a;
+  color: white;
+  width: 80%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+form div {
+  width: 80%;
+}
+
+form div input, form div textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  resize: none;
+  outline: none;
+  background: gray;
+  border: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+form div input::-webkit-input-placeholder, form div textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+form div input:-ms-input-placeholder, form div textarea:-ms-input-placeholder {
+  color: white;
+}
+
+form div input::-ms-input-placeholder, form div textarea::-ms-input-placeholder {
+  color: white;
+}
+
+form div input::placeholder, form div textarea::placeholder {
+  color: white;
+}
+
+form div input:focus, form div textarea:focus {
+  background: white;
+}
+
+form div textarea {
+  height: 80px;
+}
+
+form div button {
+  width: 50%;
+  height: 35px;
+  background: #ae00ff;
+  margin-left: 50%;
+  color: #222222;
+  border: none;
+  cursor: pointer;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+}
+
+.home .home-container {
+  height: 100%;
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+nav {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+nav .list-links {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+nav .list-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+nav .list-links ul li {
+  color: yellow;
+}
+
+nav .list-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+nav .burger {
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav .burger div {
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body main {
+  width: 100%;
+}
+
+body section {
+  width: 100%;
+}
+
+body section:first-child {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

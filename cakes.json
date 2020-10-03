@@ -66,7 +66,7 @@
         "flavor": "Carrot Cake",
         "images": [
             {
-                "image": "strawberry-cake-3-600x900.jpg"
+                "image": "layer-carrot-cake-3-600x900.jpg"
             },
             {
                 "image": "strawberry-cake-4-600x900.jpg"
@@ -106,7 +106,7 @@
         "flavor": "Black Forest",
         "images": [
             {
-                "image": "strawberry-cake-3-600x900.jpg"
+                "image": "black-forest-cake-4-600x900.jpg"
             },
             {
                 "image": "strawberry-cake-4-600x900.jpg"
@@ -147,6 +147,26 @@
         "images": [
             {
                 "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1500,
+            "1": 2100,
+            "1.5": 3200,
+            "2": 4000,
+            "3": 5200,
+            "4": 6700,
+            "5": 8100
+        }
+    },
+    {
+        "flavor": "Red Velvet Cake",
+        "images": [
+            {
+                "image": "red-velvet-layer-cake-600x400.jpg"
             },
             {
                 "image": "strawberry-cake-4-600x900.jpg"

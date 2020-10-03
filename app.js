@@ -1,10 +1,46 @@
 let nav =()=>{
     let burger = document.querySelector('.burger')
+    let linksLi = document.querySelectorAll('.links-li  li')
     let links = document.querySelector('.list-links')
 
     burger.addEventListener('click',()=>{
         links.classList.toggle('list-active')
     })
+
+    //animate
+    burger.addEventListener('click', () => {
+
+        // nav.classList.toggle('nav-active');
+
+        // Animate Links
+        linksLi.forEach((link, index) => {
+            // we use index and divide it by 7 to animate each menu item individually at different instances or delays
+
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 1.5s ease  forwards ${index  / 7 + 0.3}s `;
+            }
+        });
+        //Burger Animation
+        burger.classList.toggle('toggle');
+
+
+        //deactivating body scroll
+        // body.scrol
+
+
+
+        burger.classList.toggle('burger-active');
+        burger.classList.toggle('burger-line');
+        logoBurger.classList.toggle('logo-burger');
+        bb.classList.toggle('scroll-toggle');
+        // document.body.style.overflow= 'hidden';
+
+        // burger.addEventListener('click', () =>{
+        //     document.body.style.overflow= 'scroll';
+        // })
+    });
 }
 
     // request.open('GET', "https://ron10-7b692.firebaseio.com/.json", true);
@@ -99,11 +135,27 @@ let newProduct =()=>{
             }
         }
     // })
+};
+
+//products animation
+let anime = ()=>{
+window.addEventListener('load', ()=>{
+    let g = document.querySelectorAll('.product-card')
+
+    console.log(g)
+    g.forEach(h=>{
+        // h.style.transform = 'translateY(50%)'
+        // console.log(h);
+
+    })
+})
 }
+
 // let moreBtn = document.querySelector('.more-cakes')
 // moreBtn.addEventListener('click',()=>{
 //     newProduct();
 // })
 newProduct();
+anime();
 nav();
 // loadProducts();

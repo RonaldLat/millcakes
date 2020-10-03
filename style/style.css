@@ -74,7 +74,7 @@ form div button {
   color: #222222;
   font-weight: 600;
   border: none;
-  background: yellow;
+  background: #2ee400;
   cursor: pointer;
 }
 
@@ -102,8 +102,8 @@ form div button {
 }
 
 .home .cta button {
-  background: blue;
-  color: white;
+  background: #00ff22;
+  color: black;
   border: none;
   height: 30px;
   padding: 10px;
@@ -114,11 +114,13 @@ form div button {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .home .cta div > i {
   color: white;
   font-size: 2rem;
+  cursor: pointer;
   animation: arrow 1s ease-in-out infinite alternate-reverse;
 }
 
@@ -139,6 +141,19 @@ form div button {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 40px;
+  background-attachment: fixed;
+}
+
+.home .home-container .hero {
+  height: 50%;
+  width: 100%;
+}
+
+.home .home-container .hero img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .home .home-container .slogan {
@@ -169,6 +184,10 @@ form div button {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   color: #e9b406;
+}
+
+.home .home-container .slogan .slogan-msg .with {
+  color: #d4d4d4;
 }
 
 .home .home-container .slogan .slogan-msg div {
@@ -247,6 +266,15 @@ nav {
 nav .logo {
   font-size: 1.3rem;
   cursor: pointer;
+  font-family: sans-serif;
+}
+
+nav .logo span:nth-child(1) {
+  color: #00fa00;
+}
+
+nav .logo span:nth-child(2) {
+  color: #fdba00;
 }
 
 nav .list-links {
@@ -281,7 +309,7 @@ nav .list-links ul {
 }
 
 nav .list-links ul li {
-  color: yellow;
+  color: #00ff22;
 }
 
 nav .list-active {
@@ -292,13 +320,71 @@ nav .list-active {
 nav .burger {
   cursor: pointer;
   z-index: 101;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav .burger div {
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background: black;
-  margin: 2px;
+  border-radius: 10px;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+nav .burger div:nth-child(1) {
+  background: #9c53e6;
+}
+
+nav .burger div:nth-child(2) {
+  background: #fda800;
+}
+
+nav .burger div:nth-child(3) {
+  background: #00ff22;
+}
+
+nav .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+nav .toggle .line2 {
+  opacity: 0;
+}
+
+nav .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
 }
 
 footer {
@@ -484,7 +570,7 @@ footer .copyright {
 
 .products {
   width: 100%;
-  background: #aa7575;
+  background: #949191;
 }
 
 .products .products-container {
@@ -496,7 +582,6 @@ footer .copyright {
 }
 
 .products .products-container .product-card {
-  background: rgba(0, 0, 0, 0.6);
   height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,6 +595,9 @@ footer .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5px;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .products .products-container .product-card .product-name {
@@ -533,7 +621,8 @@ footer .copyright {
 
 .products .products-container .product-card .product-cta button {
   width: 100%;
-  background: orange;
+  background: #009e0d;
+  color: #460046;
   height: 100%;
   margin: 0 10px;
   cursor: pointer;
@@ -559,6 +648,33 @@ footer .copyright {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+}
+
+.about {
+  width: 100%;
+}
+
+.about .about-container {
+  width: 100%;
+}
+
+.about .about-container .about-me {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 150px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px;
 }
 
 * {

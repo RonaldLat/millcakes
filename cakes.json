@@ -1,0 +1,165 @@
+[
+    {
+        "flavor": "Vanilla Cake",
+        "images": [
+            {
+                "image": "vanilla-cake-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1300,
+            "1": 1900,
+            "1.5": 2800,
+            "2": 2600,
+            "3": 4800,
+            "4": 6400,
+            "5": 7700
+        }
+    },
+    {
+        "flavor": "Strawberry Cake",
+        "images": [
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1300,
+            "1": 1900,
+            "1.5": 2800,
+            "2": 3600,
+            "3": 4800,
+            "4": 6400,
+            "5": 7700
+        }
+    },
+    {
+        "flavor": "Lemon Syrup Cake",
+        "images": [
+            {
+                "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1300,
+            "1": 1900,
+            "1.5": 2800,
+            "2": 3600,
+            "3": 4800,
+            "4": 6400,
+            "5": 7700
+        }
+    },
+    {
+        "flavor": "Carrot Cake",
+        "images": [
+            {
+                "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1500,
+            "1": 2100,
+            "1.5": 3200,
+            "2": 4000,
+            "3": 5200,
+            "4": 6700,
+            "5": 8100
+        }
+    },
+    {
+        "flavor": "Zucchini Cake",
+        "images": [
+            {
+                "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1500,
+            "1": 2100,
+            "1.5": 3200,
+            "2": 4000,
+            "3": 5200,
+            "4": 6700,
+            "5": 8100
+        }
+    },
+    {
+        "flavor": "Black Forest",
+        "images": [
+            {
+                "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1500,
+            "1": 2100,
+            "1.5": 3200,
+            "2": 4000,
+            "3": 5200,
+            "4": 6700,
+            "5": 8100
+        }
+    },
+    {
+        "flavor": "Pinacolada Cake",
+        "images": [
+            {
+                "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1500,
+            "1": 2100,
+            "1.5": 3200,
+            "2": 4000,
+            "3": 5200,
+            "4": 6700,
+            "5": 8100
+        }
+    },
+    {
+        "flavor": "Passion Cake",
+        "images": [
+            {
+                "image": "strawberry-cake-3-600x900.jpg"
+            },
+            {
+                "image": "strawberry-cake-4-600x900.jpg"
+            }
+        ],
+        "price": {
+            "0.5": 1500,
+            "1": 2100,
+            "1.5": 3200,
+            "2": 4000,
+            "3": 5200,
+            "4": 6700,
+            "5": 8100
+        }
+    }
+]

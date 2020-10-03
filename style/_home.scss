@@ -1,12 +1,97 @@
 .home{
     height: 100vh;
     width: 100%;
+    // background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    .cta{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 20%;
+        button{
+            // background: rgb(240, 11, 240);
+            background: blue;
+            color: white;
+            border: none;
+            height: 30px;
+            padding: 10px;
+            // line-height: 30px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        div>i{
+            color: white;
+            font-size: 2rem;
+            animation: arrow 1s ease-in-out infinite alternate-reverse;
+        }
+    }
     .home-container{
         height: 100%;
-        background: yellow;
+        // background-image: url(../images/vanilla-cake-600x900.jpg);
+        // background-color: purple;
+        background: rgb(56, 0, 78) url(../images/vanilla-cake-600x900.jpg);
+        background-blend-mode: overlay;
+        // mix-blend-mode: screen;
         display: flex;
+        justify-content: space-around;
         flex-direction: column;
         align-items: center;
         padding-top: 40px;
+        .slogan{
+            // background: rgba(black, .5);
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .slogan-msg{
+                // background: red;
+                // background: rgba(black, 0.5);
+                // background-color: rgb(153, 0, 224);
+                background-blend-mode: overlay;
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                color: rgb(233, 180, 6);
+
+                div{
+                    // border: 2px solid black;
+                    margin: 10px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 2.5rem;
+                    justify-content: center;
+                    &:nth-child(1){
+                        // background: rgba(black, .5);
+                        height: 60%;
+                        grid-area: 1/1/ span 2/span 3;
+
+                    }
+                    &:nth-child(2){
+                        height: 50%;
+                        // background: rgba(black, .5);
+                        grid-area: 2/2/ span 3/span 2;
+                    }
+                }
+           
+            }
+            
+        }
+    }
+    
+}
+
+@keyframes arrow{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }

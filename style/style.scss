@@ -1,13 +1,23 @@
 @import './contact.scss';
 @import './home.scss';
 @import './nav.scss';
+@import './footer.scss';
+@import './reviews.scss';
+@import './products.scss';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
+}
+html{
+    width: 100vw;
+    // overflow-x: auto;
+    max-width: 100%;
 }
 body{
-    width: 100vw;
+    width: 100%;
     position: relative;
     margin: 0;
     padding: 0;
@@ -17,8 +27,6 @@ body{
     }
     section{
         width: 100%;
-        &:first-child{
-            margin: 0 auto;
-        }
+        // padding: 0 10px;
     }
 }

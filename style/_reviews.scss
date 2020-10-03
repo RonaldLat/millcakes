@@ -1,0 +1,114 @@
+.reviews{
+    color: unset;
+
+}
+.reviews-container{
+    background: rgb(216, 216, 209);
+    display: flex;
+    // width: auto;
+    overflow-x: scroll;
+    background: linear-gradient(90deg, #201c29, #201c29 1px,
+                 #17141d 0 , #17141d);
+    &::-webkit-scrollbar-track{
+        background:linear-gradient(left, purple,black);
+        border-radius: 3px;
+    }
+    &::-webkit-scrollbar{
+        background: rgb(39, 37, 37);
+        width: 10px;
+        height: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: rgb(102, 0, 102);
+        height: 10px;
+        border-radius: 10px;
+        box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25),
+                    inset -2px -2px 2px rgba(0,0,0, .25);
+        // display: none;
+    }
+
+
+}
+
+.review-card {
+    // display: none;
+    height: 230px;
+    width: 90%;
+    min-width: 400px;
+    margin: 0 15px;
+    // padding:  0 15px;
+    // background: radial-gradient(rgb(96, 96, 96), black);
+    background: rgb(196, 196, 196);
+    border-radius: 4px;
+
+    position: relative;
+    .avatar {
+        // background: rgb(76, 74, 74);
+        width: 56px;
+        height: 56px;
+        // margin: 20px;
+        // margin-top: 40px;
+        position: relative;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        object-fit: cover;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            filter: grayscale(100%);
+            overflow: hidden;
+            // margin: 2px;
+            object-fit: cover;
+
+        }
+
+        .half-circle {
+            stroke: #5b0085;
+            stroke-width: 8;
+            fill: none;
+            width: 48px;
+            height: 48px;
+            stroke-linecap: round;
+            position: absolute;
+            bottom: 0;
+            left: -50%;
+            transform: translateX(50%);
+
+            // left: 0;
+
+        }
+    }
+
+    .review-data {
+        width: 98%;
+        height: 160px;
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5px;
+        align-items: flex-start;
+        text-align: left;
+
+        .reviewer {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .review-date {
+            border-bottom: dotted 1px orange;
+        }
+
+        .review-message {
+            color: rgb(127, 124, 124);
+        }
+    }
+}

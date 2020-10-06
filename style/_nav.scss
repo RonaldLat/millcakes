@@ -1,6 +1,7 @@
 nav {
   // position: relative;
-  background: transparent;
+  // background: transparent;
+  background: rgba(rgb(0, 0, 0), 0.5);
   position: fixed;
   z-index: 100;
   width: 100%;
@@ -10,11 +11,37 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  .shopping-cart{
+    // background: burlywood;
+    position: absolute;
+    right: 25%;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cart-count{
+      color:rgb(0, 250, 0);
+      position: absolute;
+      font-weight: 600;
+      top: 0;
+      font-size: .6rem;
+      &::before{
+        content: "Ksh. ";
+      }
+    }
+    i{
+    font-size: 1.5rem;
+    color: rgb(160, 160, 160);
+
+    }
+  }
   .logo {
     font-size: 1.3rem;
     cursor: pointer;
     font-family: sans-serif;
     span {
+      font-size: 1.5rem;
       &:nth-child(1) {
         color: rgb(0, 250, 0);
       }
@@ -88,6 +115,14 @@ nav {
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+}
+.menu{
+  // background: red;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  right: 50px;
+  // transform: translateX(-100%);
 }
 @keyframes navLinkFade {
   from {

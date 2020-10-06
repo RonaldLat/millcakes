@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Sunflower:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap");
 .contact {
   background: #5a5a5a;
   color: white;
@@ -172,6 +179,7 @@ form div button {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: 'Spectral SC', serif;
 }
 
 .home .home-container .slogan .slogan-msg {
@@ -189,6 +197,7 @@ form div button {
 
 .home .home-container .slogan .slogan-msg .with {
   color: #d4d4d4;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .home .home-container .slogan .slogan-msg div {
@@ -284,6 +293,7 @@ nav .shopping-cart .cart-count {
   color: #00fa00;
   position: absolute;
   font-weight: 600;
+  font-family: sans-serif;
   top: 0;
   font-size: .6rem;
 }
@@ -300,11 +310,12 @@ nav .shopping-cart i {
 nav .logo {
   font-size: 1.3rem;
   cursor: pointer;
-  font-family: sans-serif;
+  font-family: 'Sofia', cursive;
 }
 
 nav .logo span {
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 nav .logo span:nth-child(1) {
@@ -348,6 +359,9 @@ nav .list-links ul {
 
 nav .list-links ul li {
   color: #00ff22;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: 'Spectral SC', serif;
 }
 
 nav .list-active {
@@ -530,7 +544,7 @@ footer .copyright {
 
 .review-card {
   height: 230px;
-  width: 90%;
+  width: 70%;
   min-width: 400px;
   margin: 0 15px;
   background: #c4c4c4;
@@ -979,5 +993,11 @@ body main {
 
 body section {
   width: 100%;
+  font-family: 'Duru Sans', sans-serif;
+}
+
+.section-heading {
+  font-family: 'Spectral SC', serif;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

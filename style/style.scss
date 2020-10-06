@@ -1,33 +1,42 @@
-@import './contact.scss';
-@import './home.scss';
-@import './nav.scss';
-@import './footer.scss';
-@import './reviews.scss';
-@import './products.scss';
-@import './about.scss';
+@import "./contact.scss";
+@import "./home.scss";
+@import "./nav.scss";
+@import "./footer.scss";
+@import "./reviews.scss";
+@import "./products.scss";
+@import "./about.scss";
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+//   font-family: 'Sansita Swashed', cursive;
 }
-html{
-    width: 100vw;
-    // overflow-x: auto;
-    max-width: 100%;
+html {
+  width: 100vw;
+  // overflow-x: auto;
+  max-width: 100%;
 }
-body{
+body {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  // background: purple;
+  main {
     width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    // background: purple;
-    main{
-        width: 100%;
-    }
-    section{
-        width: 100%;
-        // padding: 0 10px;
-    }
+  }
+  section {
+    width: 100%;
+    // padding: 0 10px;
+    font-family: 'Duru Sans', sans-serif;
+  }
+}
+.section-heading{
+    font-family: 'Spectral SC', serif;
+    font-weight: 400;
 }

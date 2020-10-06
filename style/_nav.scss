@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@500&display=swap');
+
 nav {
   // position: relative;
   // background: transparent;
@@ -24,6 +27,7 @@ nav {
       color:rgb(0, 250, 0);
       position: absolute;
       font-weight: 600;
+      font-family: sans-serif;
       top: 0;
       font-size: .6rem;
       &::before{
@@ -39,9 +43,11 @@ nav {
   .logo {
     font-size: 1.3rem;
     cursor: pointer;
-    font-family: sans-serif;
+    font-family: 'Sofia', cursive;
+
     span {
       font-size: 1.5rem;
+      text-transform: uppercase;
       &:nth-child(1) {
         color: rgb(0, 250, 0);
       }
@@ -69,6 +75,10 @@ nav {
       height: 100%;
       li {
         color: rgb(0, 255, 34);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-family: 'Spectral SC', serif;
+
       }
     }
   }

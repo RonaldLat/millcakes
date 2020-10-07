@@ -39,4 +39,18 @@ body {
 .section-heading{
     font-family: 'Spectral SC', serif;
     font-weight: 400;
+    position: relative;
+    &::before{
+        content: "";
+        width: 50%;
+        height: 5px;
+        margin-bottom: -2px;
+        // background: greenyellow;
+        // background: rgb(156, 83, 230);
+        border-bottom: 2px solid rgb(156, 83, 230);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 }

@@ -191,7 +191,7 @@ setTimeout(() => shoppingCart(), 1000);
 
   console.log(x,y)
   }else{
-    moreBtn.style.display= 'none'
+    moreBtn.style.opacity= '0'
 
   }
 

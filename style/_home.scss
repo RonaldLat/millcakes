@@ -7,6 +7,9 @@
     // background-blend-mode: overlay;
     background-attachment: fixed;
     background-size: cover;
+    a{
+        text-decoration: none;
+    }
     .cta{
         display: flex;
         flex-direction: column;

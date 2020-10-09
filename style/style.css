@@ -93,6 +93,10 @@ form div button {
   background-size: cover;
 }
 
+.home a {
+  text-decoration: none;
+}
+
 .home .cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,6 +368,11 @@ nav .list-links ul li {
   font-family: 'Spectral SC', serif;
 }
 
+nav .list-links ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav .list-active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -457,6 +466,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 5px;
 }
 
 footer .social-icons {
@@ -509,9 +519,18 @@ footer .copyright {
   padding: 5px;
 }
 
+.phone .fa {
+  color: #23e709;
+  margin-right: 5px;
+}
+
 .reviews {
   width: 100%;
   color: unset;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .reviews-container {
@@ -986,6 +1005,7 @@ footer .copyright {
 html {
   width: 100vw;
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {

@@ -181,6 +181,20 @@ let shoppingCart = () => {
   updateCartTotal();
 };
 
+let options ={
+  threshold: .3
+};
+let reviews = document.querySelector('.reviews')
+let observer = new IntersectionObserver((enteries, observer)=>{
+  enteries.forEach(entry=>{
+    
+    // console.log(entry.target)
+    if(entry.isIntersecting){
+      reviews.style.transform='translateX(0)'
+    }
+  })
+},options)
+observer.observe(reviews)
 // let moreBtn = document.querySelector('.more-cakes')
 // moreBtn.addEventListener('click',()=>{
 //     newProduct();

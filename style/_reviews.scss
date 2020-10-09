@@ -1,6 +1,8 @@
 .reviews{
     width: 100%;
     color: unset;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
 
 }
 .reviews-container{

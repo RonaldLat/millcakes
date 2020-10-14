@@ -135,7 +135,7 @@ let initialCakes = (cakes, x,y) => {
 
     let productImage = cakes[i].images[0].image
     let productName = cakes[i].flavor
-    let productPrice = cakes[i].price[0.5]
+    let productPrice = cakes[i].price[1]
 
     let productsContainer = document.querySelector(".products-container");
     let productCard = document.createElement('div')

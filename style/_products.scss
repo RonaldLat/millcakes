@@ -1,11 +1,12 @@
 .products {
   width: 100%;
   // background: rgb(148, 74, 136);
-  background: rgb(253, 168, 0);
   margin: 10px 0;
   padding: 5px;
   .products-container {
     width: 100%;
+  background: rgb(253, 168, 0);
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     .product-card {

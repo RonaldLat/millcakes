@@ -519,9 +519,18 @@ footer .copyright {
   padding: 5px;
 }
 
+.phone {
+  text-decoration: none;
+}
+
 .phone .fa {
   color: #23e709;
   margin-right: 5px;
+}
+
+.phone a {
+  text-decoration: none;
+  color: #23e709;
 }
 
 .reviews {
@@ -653,13 +662,13 @@ footer .copyright {
 
 .products {
   width: 100%;
-  background: #fda800;
   margin: 10px 0;
   padding: 5px;
 }
 
 .products .products-container {
   width: 100%;
+  background: #fda800;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1022,12 +1031,27 @@ body main {
 body section {
   width: 100%;
   font-family: 'Duru Sans', sans-serif;
+  position: relative;
 }
 
 .section-heading {
   font-family: 'Spectral SC', serif;
   font-weight: 400;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px 5px;
+  font-size: 1.2rem;
 }
 
 .section-heading::before {

@@ -35,12 +35,19 @@ body {
     width: 100%;
     // padding: 0 10px;
     font-family: 'Duru Sans', sans-serif;
+    position: relative;
   }
 }
 .section-heading{
     font-family: 'Spectral SC', serif;
     font-weight: 400;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 5px 5px;
+    font-size: 1.2rem;
     &::before{
         content: "";
         width: 50%;

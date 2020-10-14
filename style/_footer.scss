@@ -35,8 +35,14 @@ footer {
 }
 .phone{
   // color: lightgreen;
+  text-decoration: none;
   .fa{
     color: rgb(35, 231, 9);
     margin-right: 5px;
   }
+  a{
+    text-decoration: none;
+    color: rgb(35, 231, 9);
+  }
+
 }
